@@ -1,0 +1,81 @@
+  <ion-header no-border>
+    <ion-toolbar class="appclr">
+      <ion-buttons routerLink="/course" slot="start" style="color: #fff;">
+        <ion-icon style="font-size: 32px;padding-left: 10px;" name="chevron-back-outline"></ion-icon>
+      </ion-buttons>
+      <ion-title>
+        <h3 style="font-family: Bookman;color: #fff;">Submenu Detail</h3>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-content>
+   
+
+    <ng-container *ngFor="let item of submenus; let i=index;">
+      <ion-list id="sidenav">
+        <ion-item (click)="menuItemHandler(i)" class="ionitem">
+          <img class="testImg" src="../../../assets/login/n.jpeg" />
+          <ion-label class="testName"> {{item.menu}} </ion-label>
+          <p style="color: #eaebec; margin-top: 18px;">&#10148;</p>
+        </ion-item>
+        <ion-item-group submenu id=showSubmenu{{i}}>
+          <ion-item submenu-item class="ionitemsub">
+            <ion-row style="    width: 100%;">
+              <ion-col size="6">
+                <!-- <img class="testImgsub" src="../../../assets/login/n.jpeg" /> -->
+                <ion-icon class="testImgsub"  name="videocam-outline"></ion-icon>
+                <p class="testNamesub">Video </p>
+              </ion-col>
+              <ion-col size="6">
+                <ion-icon class="testImgsub" name="musical-notes-outline"></ion-icon>
+                <p class="testNamesub">Audio </p>
+              </ion-col>
+              <ion-col size="6">
+                <ion-icon class="testImgsub"  name="flower-outline"></ion-icon>
+                <p class="testNamesub">Class </p>
+              </ion-col>
+              <ion-col size="6">
+                <ion-icon class="testImgsub"  name="book-outline"></ion-icon>
+                <p class="testNamesub">Practice </p>
+              </ion-col>
+              <ion-col size="6">
+                <img class="testImgsub" src="../../../assets/login/n.jpeg" />
+                <p class="testNamesub">Hindi </p>
+              </ion-col>
+              <ion-col size="6">
+                <img class="testImgsub" src="../../../assets/login/n.jpeg" />
+                <p class="testNamesub">English </p>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+        </ion-item-group>
+      </ion-list>
+    </ng-container>
+ 
+  </ion-content>
+
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-tabs>
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button tab="schedule" (click)="share()">
+            <ion-icon class="footerIcon" name="share-social"></ion-icon>
+            <ion-label class="ftrTitle">Share</ion-label>
+          </ion-tab-button>
+
+          <ion-tab-button tab="speakers" routerLink="/course">
+            <ion-icon class="footerIcon" name="home"></ion-icon>
+            <ion-label class="ftrTitle">Home</ion-label>
+          </ion-tab-button>
+
+          <ion-tab-button tab="schedule" routerLink="/dobut">
+            <ion-icon class="footerIcon" name="help-outline"></ion-icon>
+            <ion-label class="ftrTitle">Doubt</ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+  </ion-footer>

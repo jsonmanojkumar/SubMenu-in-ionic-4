@@ -1,0 +1,100 @@
+// *************** new start ***********************
+
+
+.card{
+    margin: 0;
+  }
+  .testImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    height: 60px;
+    width: 60px;
+    padding: 2px;
+  }
+  .testImgsub{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    padding: 2px;
+  }
+  .hdrtitle{
+    font-size: 12px;
+    color: #043f4f;
+    font-weight: bold;
+  }
+  .header{
+    margin: 0;
+    background: #ffffff;
+    height: 24px;
+    padding: 0;
+  }
+  .testName{
+    color: white;
+    margin-left: 10px;
+    font-family: auto;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .testNamesub{
+    color:#043f4f;
+    margin-left: 10px;
+    font-family: auto;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .testAttempt{
+    color: white;
+    font-size: 12px;
+    font-family: initial;
+    font-weight: bold;
+    text-align: center;
+    line-height: 9px;
+  }
+
+  .footerIcon{
+    color: #043f4f;
+    font-size: 25px;
+  }
+  .ftrTitle{
+    color: #043f4f;
+    font-size: 10px;
+    font-family: initial;
+    font-weight: bold;
+  }
+
+
+  .ionitem {
+    --background: #043f4f;
+    padding-left: 10px;
+    padding-right: 10px;
+    --border-radius: 6px;
+  }
+
+  .ionitemsub {
+    --background: #01597145;
+    padding-left: 10px;
+    padding-right: 10px;
+    --border-radius: 6px;
+  }
+   
+#sidenav {
+  ion-item-group[submenu] {
+    overflow: hidden;
+    display: block;
+    height: 0;
+    transition: height .3s linear;
+    // padding-left: 10%;
+    &.visible {
+        height: inherit;
+        // this is just sample value, calculate how much space you need for your menu items
+    }
+  }
+}
